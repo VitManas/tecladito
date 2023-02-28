@@ -13,7 +13,6 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++){
 
     tecla.onclick = function () {
         tocaSom(idAudio);
-        console.log(tecla);
     }
 }
 
@@ -21,9 +20,14 @@ document.onkeydown = function(e) {
     let x = e.keyCode;
     let y = String.fromCharCode(x);
 
-    if(y){
-        const idAudio = `#som_${y}`;
+    const idAudio = `#som_${y.toLowerCase()}`;
+
+    if (y) {
         tocaSom(idAudio);
-        console.log(tecla);
     }
+
+    //const list = document.querySelector(`.${y}`);
 }
+
+
+
