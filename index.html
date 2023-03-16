@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tecladito</title>
+</head>
+<body>
+    <div class="cent spacetoo"id="dvConteudoDois">
+        <h1>Fale a palavra "Começar" ou clique aqui no botão abaixo para inciar o teclado</h1>
+        <button class="button" onclick="ocultarDois()"> Começar </button>
+        <button id="ocult" class="ocult" onclick="ocultar()"></button>
+    </div>
+
+    <div id="dvConteudo" class="space">
+
+        <button id="black" onclick="trocaBlack()">Preto</button>
+        <button id="blue" onclick="trocaBlue()">Azul</button>
+        <button id="green" onclick="trocaGreen()">Verde</button>
+        <button id="red" onclick="trocaRed()">Vermelho</button>
+
+        <ul id="ultopp" class="keyboardblack">
+            <li class="white tecla a offset">A</li>
+            <li class="black tecla w">W</li>
+            <li class="white tecla s offset">S</li>
+            <li class="black tecla e">E</li>
+            <li class="white tecla d offset">D</li>
+            <li class="white tecla f">F</li>
+            <li class="black tecla t">T</li>
+            <li class="white tecla g offset">G</li>
+            <li class="black tecla y">Y</li>
+            <li class="white tecla h offset">H</li>
+            <li class="black tecla u">U</li>
+            <li class="white tecla j offset">J</li>
+        </ul>
+    </div>
+        
+    <audio src="sounds/keyc.wav" id="som_a"></audio>
+    <audio src="sounds/keycsus.wav" id="som_w"></audio>
+    <audio src="sounds/keyd.wav" id="som_s"></audio>
+    <audio src="sounds/keydsus.wav" id="som_e"></audio>
+    <audio src="sounds/keye.wav" id="som_d"></audio>
+    <audio src="sounds/keyf.wav" id="som_f"></audio>
+    <audio src="sounds/keyfsus.wav" id="som_t"></audio>
+    <audio src="sounds/keyg.wav" id="som_g"></audio>
+    <audio src="sounds/keygsus.wav" id="som_y"></audio>
+    <audio src="sounds/keya.wav" id="som_h"></audio>
+    <audio src="sounds/keyasus.wav" id="som_u"></audio>
+    <audio src="sounds/keyb.wav" id="som_j"></audio>
+        
+    <script type='text/javascript' src='app/ocultmostr.js'></script>
+    <script type='text/javascript' src='app/main.js'></script>
+    <script type='text/javascript' src='app/reconhecimentoDeVoz.js'></script>
+    <script type='text/javascript' src='app/conferir.js'></script>
+    <script type='text/javascript' src='app/trocaCor.js'></script>
+</body>
+</html>
